@@ -65,6 +65,7 @@ a:hover {
   color: #fff;
   line-height: 25px;
   min-width: 90%;
+  max-width: 90%;
 }
 
 .welcome-label {
@@ -140,6 +141,12 @@ a:hover {
 }
 
 /* NEW ACCOUNT PAGE */
+
+.new-user-login-details-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .upload {
   width: 100px;
   position: relative;
@@ -177,4 +184,13 @@ a:hover {
 
 input[type="file"]::-webkit-file-upload-button {
   cursor: pointer;
+}
+
+.new-user-back-wrapper {
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+.new-user-back-wrapper > a {
+  display: flex;
 }
