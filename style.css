@@ -4,8 +4,36 @@
   box-sizing: border-box;
 }
 
+/* Font Family */
+
+@font-face {
+  font-family: "Averta-Light";
+  src: url("./Font/Font/Averta-Light.otf");
+}
+
+@font-face {
+  font-family: "Averta-Regular";
+  src: url("./Font/Font/Averta-Regular.otf");
+}
+
+@font-face {
+  font-family: "Averta-Semibold";
+  src: url("./Font/Font/Averta-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Averta-Bold";
+  src: url("./Font/Font/Averta-Bold.otf");
+}
+
 body {
   max-width: 500px;
+}
+
+body,
+button,
+input {
+  font-family: "Averta-Regular";
 }
 
 .container-wrapper {
@@ -58,7 +86,15 @@ a:hover {
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* LOGIN PAGE */
+
+.welcome-image > img {
+  max-width: 55px;
+}
 
 .mobo-login-page {
   text-align: center;
@@ -224,4 +260,58 @@ input[type="file"]::-webkit-file-upload-button {
   line-height: 20px;
   padding-block: 5px;
   font-size: 14px;
+}
+
+/* LOGGED DETAILS PAGE */
+
+.logged-top-bar {
+  padding: 5px;
+  background: #f4f4f4;
+}
+
+.logged-top-bar > p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.top-bar-wrapper {
+  background: #107899;
+  justify-content: space-evenly;
+  flex-basis: 100%;
+}
+
+.message-bar-wrapper {
+  background: #107899;
+}
+
+.top-search-wrapper {
+  position: relative;
+}
+
+.top-search-wrapper > input {
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 99px;
+  outline: none;
+  border: 1px solid #cecece;
+}
+
+.notification-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.messages-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  min-width: 26px;
+  min-height: 26px;
+  background: #b70f0f;
+  color: #fff;
+  border-radius: 50%;
 }
