@@ -1238,6 +1238,7 @@ td {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .order-shipping-bottom .order-close {
@@ -1549,9 +1550,6 @@ td {
 
 /* customer account style */
 
-.customer-account-container {
-  /* background: #f2f2f2; */
-}
 
 .customer-review {
   background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(2, 160, 196, 0.30196078431372547));
@@ -2062,13 +2060,15 @@ td {
   position: absolute;
   bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
-.like-product-bottom .order-close {
-  cursor: pointer;
+.bottom-anker {
+  text-decoration: none;
+  /* cursor: pointer; */
 }
 
-.like-product-bottom .order-close-text p {
+.bottom-anker p {
   font-size: 12px;
   color: #bfbfbf;
   margin-bottom: 0;
@@ -2137,4 +2137,105 @@ hr {
   border: none !important;
   border-top: 0 !important;
   margin: 0 !important;
+}
+
+/* follow-list-style */
+
+.follow-container {
+  position: relative;
+  height: 812px;
+}
+
+.follow-merchant-wrapper {
+  padding: 13px;
+}
+
+.follow-merchant-wrapper .follow-merchant-detail .follow-merchane-happy {
+  border: 1px solid #e8e8e8;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.follow-merchant-wrapper .follow-merchant-detail .merchant-follow-name h3 {
+  font-size: 14px;
+  color: #606060;
+  font-family: "Averta-Semibold";
+}
+
+.follow-merchant-wrapper .follow-merchant-detail .merchant-follow-name p {
+  font-size: 12px;
+  color: #b5b5b5;
+  font-family: "Averta-Light";
+}
+
+.follow-merchant-wrapper .merchant-img-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 9px;
+}
+
+.follow-merchant-wrapper .merchant-img-content .img-bg {
+  border: 1px solid #e8e8e8;
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+/* change-pass-style */
+
+.change-pass-container {
+  position: relative;
+  height: 812px;
+}
+
+.main-heading {
+  font-size: 23px;
+  color: #03627c;
+  font-family: "monotypecorsiva";
+}
+
+.change-pass-header {
+  padding: 30px 17px;
+}
+
+.change-pass-wrapper {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.change-pass-wrapper .veridy-code-content h2 {
+  font-size: 16px;
+  color: #606060;
+  font-family: "Averta-Semibold";
+}
+
+.change-pass-wrapper .veridy-code-content .verify-code-nmb {
+  display: flex;
+  justify-content: center;
+}
+
+.change-pass-wrapper .veridy-code-content .verify-code-nmb input {
+  width: 30px;
+  height: 40px;
+  margin-left: 9px;
+  background: #f2f0f0;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.change-pass-wrapper .veridy-code-content .verify-code-nmb input:first-child {
+  margin-left: 0;
+}
+
+.change-pass-wrapper .resend-content p {
+  font-size: 16px;
+  color: #a9a9a9;
+  font-family: "Averta-Regular";
 }
