@@ -31,6 +31,11 @@
   src: url("./Font/Font/Monotype\ Corsiva.ttf");
 }
 
+@font-face {
+  font-family: "Nunito-light";
+  src: url("./Font/Font/nunito-light.ttf");
+}
+
 body {
   max-width: 500px;
 }
@@ -1643,21 +1648,22 @@ td {
   padding: 14px;
 }
 
-.info-container .shipping-address-head {
+.shipping-address-head {
   display: flex;
   align-items: center;
 }
 
-.info-container .shipping-address-head .back-img {
+.shipping-address-head .back-img {
   width: 35px;
   height: 35px;
   border: 1px solid #e8e8e8;
   display: grid;
   place-items: center;
   border-radius: 50px;
+  cursor: pointer;
 }
 
-.info-container .shipping-address-head h3 {
+.shipping-address-head h3 {
   font-size: 23px;
   color: #03627c;
   font-family: "monotypecorsiva";
@@ -2096,7 +2102,7 @@ td {
   padding: 15px;
 }
 
-.product-review-detail .review-customer-information .review-customer-left .customer-img img{
+.product-review-detail .review-customer-information .review-customer-left .customer-img img {
   width: 40px;
   height: 40px;
 }
@@ -2238,4 +2244,125 @@ hr {
   font-size: 16px;
   color: #a9a9a9;
   font-family: "Averta-Regular";
+}
+
+/* set-pass-style */
+
+.set-pass-container {
+  position: relative;
+  height: 812px;
+}
+
+.set-pass-wrapper {
+  padding: 15px;
+  margin-top: 96px;
+}
+
+.set-pass-wrapper h3 {
+  font-size: 16px;
+  color: #606060;
+  font-family: "Averta-Semibold";
+}
+
+.set-pass-wrapper .form .pass-input {
+  position: relative;
+  font-size: 14px;
+  color: #bebebe;
+}
+
+.set-pass-wrapper .form .pass-input input {
+  width: 100%;
+  height: 30px;
+  border-radius: 99px;
+  border: 1px solid #dddddd;
+  outline: none;
+  font-family: "Nunito-light";
+  padding-left: 33px;
+  background: #f9f9f9;
+}
+
+.set-pass-wrapper .form .pass-input span {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+}
+
+
+/* .success-pass-style */
+
+.success-pass-container {
+  padding: 14px;
+  background: #929393;
+  /* opacity: 0.5; */
+}
+
+.success-pass-container p {
+  font-size: 14px;
+  color: #5c5858;
+  margin-top: 83px;
+  font-family: "Averta-Regular";
+}
+
+.success-pass-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 55px 26px 33px 26px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.success-pass-wrapper .pass-tick-show {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #03627c;
+  border-radius: 50%;
+}
+
+.success-pass-wrapper p {
+  font-size: 14px;
+  color: #606060;
+  font-family: "Averta-Regular";
+}
+
+.success-pass-wrapper .profile-back {
+  text-align: center;
+  margin-top: 59px;
+}
+
+.success-pass-wrapper .profile-back .profile-back-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(to right, #107899 50%, #12a7d6 100%);
+  border-radius: 99px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 0 24px;
+}
+
+.pass-confirmation-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-gap: 75px;
+}
+
+.pass-confirmation-content .pass-close {
+  width: 41px;
+  height: 41px;
+  border: 1px solid #03627c;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.pass-confirmation-content .pass-confirm {
+  width: 41px;
+  height: 41px;
+  background: #03627c;
+  border-radius: 50%;
 }
