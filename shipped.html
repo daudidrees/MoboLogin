@@ -14,20 +14,44 @@
 
 <body>
     <div class="page-width">
-        <div class="order-pending-container">
+        <div class="order-shipping-container">
             <div class="bg-color">
-                <div class="order-pending-section">
+                <div class="order-shipping-section">
                     <h3 class="order-heading-nmb">Order 00321</h3>
-                    <div class="order-sent-section">
-                        <div class="order-sent-content">
-                            <p>Your order is pending</p>
+                    <div class="order-shipping-content">
+                        <div class="order-shipped-status">
+                            <p>Your order is shipped</p>
                         </div>
-                        <div class="order-pending-date">
-                            <p>Dec 02 <span>00:00</span></p>
-                            <label class="order-checked-content">Your order has been sent
-                                <input type="radio" name="radio" checked>
-                                <span class="checkmark"></span>
-                            </label>
+                        <div class="order-shipping-main-date">
+                            <div class="order-shipping-date">
+                                <p>Dec 02 <span>00:00</span></p>
+                                <label class="order-checked-content">In Transit to Next Facility
+                                    <input type="radio" name="radio" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="order-shipping-date">
+                                <p>Dec 02 <span>00:00</span></p>
+                                <label class="order-checked-content">Departaed Post Office<br>Northfield, NJ, 08225
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="order-shipping-date">
+                                <p>Dec 02 <span>00:00</span></p>
+                                <label class="order-checked-content">USPS in prossession of item<br>Northfield, NJ,
+                                    08225
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="order-shipping-date">
+                                <p>Dec 02 <span>00:00</span></p>
+                                <label class="order-checked-content">Your order has been sent
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div class="order-shipping-info">
@@ -49,6 +73,18 @@
                                     <tr>
                                         <td class="col-sm-6">Shipping option</td>
                                         <td class="col-sm-6">Standard</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-6">Carrier name</td>
+                                        <td class="col-sm-6">DHL</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-6">Tracking number</td>
+                                        <td class="col-sm-6">09836661TJ99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-6">Est delivery date</td>
+                                        <td class="col-sm-6">Tue, Sep 25 2022</td>
                                     </tr>
                                 </table>
                             </div>
@@ -109,11 +145,10 @@
                     </div>
                     <div class="payment-cheque-content">
                         <div class="payment-cheque-text">
-                            <p class="mb-5">Payment type <br> Cheques</p>
+                            <p class="mb-5">Payment type <br> Zelle</p>
                         </div>
                         <div class="payment-cheque-img">
                             <img src="./images/payment-cheque-1.png">
-                            <img src="./images/payment-cheque-2.png">
                         </div>
                     </div>
                 </div>
@@ -124,8 +159,8 @@
                         <span class="arrow-left"></span>
                         Back
                     </a>
-                    <a href="./shipping.html">
-                        <button class="btnss">Cancel</button>
+                    <a href="./merchant.html">
+                        <button class="btnss">Review</button>
                     </a>
                 </div>
             </div>
