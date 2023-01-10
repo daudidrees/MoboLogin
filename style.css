@@ -1643,9 +1643,10 @@ td {
 /* info style */
 
 .info-container {
-  height: 100vh;
+  height: 812px;
   position: relative;
   padding: 14px;
+  background: #929393;
 }
 
 .shipping-address-head {
@@ -1676,6 +1677,10 @@ td {
   background: #ffffff;
   border-radius: 10px;
   /* display: none; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 347px;
 }
 
 .info-container .info-section h3 {
@@ -1703,7 +1708,7 @@ td {
   border-radius: 99px;
   padding: 8px 0px 8px 32px;
   width: 100%;
-  height: 30px;
+  height: 31px;
   background: #f7f7f7;
   border: 1px solid #c9c9c9;
   outline: none;
@@ -1773,7 +1778,10 @@ td {
   background: #ffffff;
   border-radius: 10px;
   padding: 24px 35px 28px 35px;
-  /* display: none; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 347px;
 }
 
 .new-shipping-address-section h3 {
@@ -1792,7 +1800,7 @@ td {
   background: #f2f2f2;
   border: 1px solid #dbdbdb;
   padding-left: 34px;
-  height: 30px;
+  height: 31px;
   border-radius: 99px;
   font-size: 14px;
   font-family: "Averta-Regular";
@@ -2365,4 +2373,90 @@ hr {
   height: 41px;
   background: #03627c;
   border-radius: 50%;
+}
+
+/* sign-business-style */
+
+.sign-business-container {
+  padding: 14px;
+  height: 100vh;
+}
+
+.sign-business-wrapper h3 {
+  font-size: 16px;
+  color: #606060;
+  font-family: "Averta-Semibold";
+}
+
+.sign-business-wrapper .sign-upload-flex .upload-content {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #107899;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.sign-business-wrapper {
+  padding: 28px 30px 39px 28px;
+  background: #ffffff;
+  border-radius: 15px;
+  position: absolute;
+  max-width: 347px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sign-business-wrapper .sign-upload-flex {
+  display: flex;
+  align-items: center;
+}
+
+.sign-business-wrapper .sign-upload-flex .upload-content .upload-img-input {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sign-business-wrapper .sign-upload-flex .upload-content .upload-img-input input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sign-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.sign-input-wrapper input {
+  width: 100%;
+  height: 31px;
+  padding-left: 40px;
+  border-radius: 99px;
+  outline: none;
+  border: 1px solid #c9c9c9;
+  background: #f7f7f7;
+  font-size: 14px;
+  font-family: "Averta-Regular";
+}
+
+.sign-input-wrapper span {
+  position: absolute;
+  left: 15px;
 }
