@@ -1,3 +1,30 @@
+window.onload = function () {
+  const plus = document.querySelector(".plus"),
+    minus = document.querySelector(".minus"),
+    num = document.querySelector(".num");
+
+  let a = 2;
+
+  plus.addEventListener("click", () => {
+    if (a < 999) {
+      a++;
+      insertingText();
+    }
+  });
+
+  minus.addEventListener("click", () => {
+    if (a > 1) {
+      a--;
+      insertingText();
+    }
+  });
+
+  function insertingText() {
+    a = (a < 10) ? + a : a;
+    num.innerText = a;
+  }
+}
+
 function openCity(evt, cityName) {
   var i, tabsection, tablinks;
   tabsection = document.getElementsByClassName("tabsection");
@@ -15,7 +42,7 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 
 
-function closeBtn (elem) {
+function closeBtn(elem) {
   document.getElementById(elem).classList.add('visibility-hidden');
 }
 

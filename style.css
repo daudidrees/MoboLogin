@@ -2701,3 +2701,118 @@ td {
   padding: 15px;
   cursor: pointer;
 }
+
+/* checkout-style */
+
+.checout-delivery-name {
+  background: #02a0c4;
+  padding: 13px;
+}
+
+.checout-delivery-name .checout-delivery-left p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.checout-delivery-name .checout-delivery-left p:last-child {
+  font-family: "Averta-Bold";
+  margin-top: 13px;
+}
+
+.checkout-wrapper {
+  padding: 14px;
+}
+
+.checkout-wrapper .checkout-merchant .checkout-happy {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #5b5b5b;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.checkout-wrapper .checkout-merchant p {
+  font-size: 14px;
+  color: #606060;
+}
+
+
+
+.checkout-merchant-item .checkout-item {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  width: 91px;
+  position: relative;
+}
+
+.checkout-merchant-item .checkout-item span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.checkout-merchant-item .checkout-item span img {
+  vertical-align: top;
+}
+
+.checkout-merchant-title p {
+  font-size: 14px;
+  color: #606060;
+}
+
+.quantity-wrapper {
+  margin-top: 10px;
+}
+
+.quantity-wrapper .quantity-content {
+  gap: 17px;
+}
+
+.quantity-wrapper .quantity-content .minus {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.quantity-wrapper .quantity-content .plus {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+  background: #03627c;
+  cursor: pointer;
+}
+
+.quantity-wrapper .merchant-price p {
+  font-size: 18px;
+  color: #03627c;
+  font-family: "Averta-Semibold";
+}
+
+.shipping-standard {
+  border: 1px solid #03627c;
+  border-radius: 5px;
+  padding: 8px 16px 8px 8px;
+}
+
+.shipping-standard .shipping-standard-left .shipping-standard-detail p {
+  font-size: 12px;
+  color: #606060;
+}
+
+.shipping-standard .shipping-standard-right p {
+  font-size: 18px;
+  color: #03627c;
+  font-family: "Averta-Semibold";
+}
