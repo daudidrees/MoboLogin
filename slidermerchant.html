@@ -39,16 +39,6 @@
                             <img src="./images/slider-bg.png" class="d-block w-100 slider-img" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span><i class="fa-solid fa-arrow-left"></i></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span><i class="fa-solid fa-arrow-right"></i></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
                 <div class="merchant-product-review">
                     <div class="merchant-product-review-left">
@@ -172,32 +162,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const filterContainer = document.querySelector(".gallery-filter"),
-            galleryItems = document.querySelectorAll(".gallery-item");
-
-        filterContainer.addEventListener("click", (event) => {
-            if (event.target.classList.contains("filter-item")) {
-                // deactivate existing active 'filter-item'
-                filterContainer.querySelector(".active").classList.remove("active");
-                // activate new 'filter-item'
-                event.target.classList.add("active");
-                const filterValue = event.target.getAttribute("data-filter");
-                galleryItems.forEach((item) => {
-                    if (item.classList.contains(filterValue) || filterValue === 'all') {
-                        item.classList.remove("hide");
-                        item.classList.add("show");
-                    }
-                    else {
-                        item.classList.remove("show");
-                        item.classList.add("hide");
-                    }
-                });
-            }
-        });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
