@@ -66,12 +66,18 @@ function openCity(evt, cityName) {
 
 document.getElementById("defaultOpen").click();
 
+function myRead() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtnn");
 
-function closeBtn(elem) {
-  document.getElementById(elem).classList.add('visibility-hidden');
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
 }
-
-function popups(funnc) {
-  document.getElementById(funnc).classList.remove('visibility-hidden');
-}
-
