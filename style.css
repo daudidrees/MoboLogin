@@ -52,7 +52,7 @@ input {
 }
 
 .page-width {
-  max-width: 375px;
+  max-width: 500px;
 }
 
 .container-wrapper {
@@ -1682,11 +1682,11 @@ td {
   padding: 24px 35px 28px 35px;
   background: #ffffff;
   border-radius: 10px;
-  /* display: none; */
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 347px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 90%;
 }
 
 .info-container .info-section h3 {
@@ -1786,8 +1786,9 @@ td {
   padding: 24px 35px 28px 35px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 347px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 .new-shipping-address-section h3 {
@@ -2411,9 +2412,10 @@ td {
   background: #ffffff;
   border-radius: 15px;
   position: absolute;
-  max-width: 347px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 90%;
 }
 
 .sign-business-wrapper .sign-upload-flex {
@@ -2473,11 +2475,12 @@ td {
   padding: 30px 15px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 347px;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
   width: 100%;
   background: #ffffff;
   border-radius: 15px;
+  left: 50%;
 }
 
 .cancel-order-wrapper h3 {
@@ -2576,9 +2579,9 @@ td {
   border-radius: 15px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 347px;
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  left: 50%;
 }
 
 .rating-review-wrapper h3 {
@@ -2668,9 +2671,9 @@ td {
   border-radius: 15px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  max-width: 347px;
-  width: 100%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  left: 50%;
 }
 
 .shipping-option-wrapper h3 {
@@ -3445,7 +3448,7 @@ td {
 
 .chat-section .client-chat .client-msg p:first-child {
   font-size: 10px;
-  color: #9b9b9b; 
+  color: #9b9b9b;
 }
 
 .chat-section .client-chat .client-msg p:last-child {
