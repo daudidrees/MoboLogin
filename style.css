@@ -2000,6 +2000,7 @@ td {
 
 .address-detail-bottom .address-back-detail>a {
   text-decoration: none;
+  color: #03627c;
 }
 
 .address-detail-bottom .address-back-detail .detail-arrow-left {
@@ -3532,4 +3533,8 @@ td {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.page-links {
+  text-decoration: none;
 }
