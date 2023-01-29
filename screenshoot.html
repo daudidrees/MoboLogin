@@ -42,7 +42,11 @@
                     <div class="image-content">
                         <div class="upload-img">
                             <img src="./images/upload-img.png">
+                            <div class="upload-img-input">
+                                <input class="upload-img-wrap" type="file" name="file" id="uploadFile">
+                            </div>
                         </div>
+
                         <p class="img-text text-center mt-1 mb-0">Image</p>
                     </div>
 
@@ -71,12 +75,18 @@
                         <div class="front-img">
                             <div class="upload-img">
                                 <img src="./images/upload-img.png">
+                                <div class="upload-img-input">
+                                    <input class="upload-img-wrap" type="file" name="file" id="uploadFile">
+                                </div>
                             </div>
                             <p class="img-text text-center mt-1 mb-0">Front</p>
                         </div>
                         <div class="back-img">
                             <div class="upload-img">
                                 <img src="./images/upload-img.png">
+                                <div class="upload-img-input">
+                                    <input class="upload-img-wrap" type="file" name="file" id="uploadFile">
+                                </div>
                             </div>
                             <p class="img-text text-center mt-1 mb-0">Back</p>
                         </div>
@@ -149,6 +159,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabsection, tablinks;
+            tabsection = document.getElementsByClassName("tabsection");
+            for (i = 0; i < tabsection.length; i++) {
+                tabsection[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+    </script>
 
     <script src="./script.js"></script>
 </body>

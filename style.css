@@ -445,6 +445,7 @@ input[type="file"]::-webkit-file-upload-button {
   justify-content: center;
   align-items: center;
   margin: auto;
+  position: relative;
 }
 
 .img-text {
@@ -781,13 +782,14 @@ td {
 }
 
 .merchant-price-list td:nth-child(2) {
-  text-align: center;
+  text-align: right;
   vertical-align: top;
   font-size: 12px;
 }
 
 .merchant-price-list td:nth-child(1) {
   font-size: 12px;
+  width: 50%;
 }
 
 .merchant-price-list td:nth-child(3) {
@@ -831,6 +833,7 @@ td {
   font-size: 13px;
   margin: 19px 0px 31px 0px;
   color: #107899;
+  background: #ffffff;
 }
 
 .order-btn-content .order-btn:hover {
@@ -1118,10 +1121,10 @@ td {
   margin-top: 16px;
 }
 
-.order-supply-table table td:nth-child(1) {
+.order-supply-table table tr td:nth-child(1) {
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 185px;
   font-size: 12px;
 }
 
@@ -1135,7 +1138,7 @@ td {
 }
 
 .order-supply-table table td:nth-child(2) {
-  text-align: right;
+  /* text-align: right; */
   font-size: 10px;
 }
 
@@ -1188,7 +1191,7 @@ td {
   ;
   border-radius: 30px;
   border: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 14px;
   color: #ffffff;
   font-weight: 600;
@@ -1396,6 +1399,7 @@ td {
 .gallery-main .gallery-filter .filter-item.active {
   color: #107899;
   border: 1px solid #107899;
+  background: #ffffff;
 }
 
 .gallery-item-main {
@@ -1571,8 +1575,12 @@ td {
   justify-content: space-between;
 }
 
-.customer-review-detail .customer-accont {
+.info-section .profile-picture .customer-review-detail .customer-accont {
   display: flex;
+}
+
+.customer-review-detail .customer-accont .customer-img img {
+  border-radius: 50%;
 }
 
 .customer-review-detail .customer-accont .customer-accont-detail {
@@ -1609,6 +1617,7 @@ td {
   color: #107899;
   font-family: "Averta-Bold";
   font-size: 13px;
+  background: #ffffff;
 }
 
 .customer-account-privacy-section {
@@ -1703,6 +1712,15 @@ td {
   border-radius: 50%;
   background: #107899;
   margin: 19px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-section .profile-picture img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
 }
 
 .info-form .info-main-wrapper {
@@ -1956,7 +1974,7 @@ td {
 }
 
 .adress-detail-container .address-detail-head h3 {
-  font-size: 23px;
+  font-size: 22px;
   color: #03627c;
   font-family: "monotypecorsiva";
 }
@@ -1970,6 +1988,7 @@ td {
 .address-detail-wrapper .address-detail .address-primary .address-primary-left p {
   font-size: 14px;
   color: #606060;
+  font-family: "Averta-semibold";
 }
 
 .address-detail-wrapper .address-detail .address-primary .address-primary-right p {
@@ -1993,7 +2012,7 @@ td {
 
 .address-detail-bottom .address-back-detail {
   display: flex;
-  max-width: 69%;
+  max-width: 65%;
   justify-content: space-between;
   align-items: center;
 }
@@ -2121,6 +2140,7 @@ td {
 .product-review-detail .review-customer-information .review-customer-left .customer-img img {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .product-review-detail .review-customer-information .review-customer-left .customer-name p {
@@ -2424,7 +2444,7 @@ td {
   align-items: center;
 }
 
-.sign-business-wrapper .sign-upload-flex .upload-content .upload-img-input {
+.upload-img-input {
   position: absolute;
   border-radius: 50%;
   overflow: hidden;
@@ -2436,7 +2456,7 @@ td {
   height: 100%;
 }
 
-.sign-business-wrapper .sign-upload-flex .upload-content .upload-img-input input {
+.upload-img-wrap {
   position: absolute;
   top: 0;
   right: 0;
@@ -2446,6 +2466,7 @@ td {
   height: 100%;
   opacity: 0;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .sign-input-wrapper {
@@ -2515,7 +2536,7 @@ td {
   font-size: 14px;
   color: #a0a0a0;
   font-family: "Averta-Regular";
-  background: #dbdbdb;
+  background: lightgrey;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -2888,6 +2909,7 @@ td {
   background: linear-gradient(to right, #107899 50%, #12a7d6 100%);
   color: #ffffff;
   text-transform: uppercase;
+  font-family: "Averta-semibold";
 }
 
 /* shop style */
@@ -3324,6 +3346,7 @@ td {
   background: linear-gradient(to right, #107899 50%, #12a7d6 100%);
   border: none;
   outline: none;
+  font-weight: 600;
 }
 
 /* chat-contact-style */
@@ -3373,6 +3396,7 @@ td {
 .chat-detail-content .chat-detail-left .chat-merchant-detail p:first-child {
   font-size: 14px;
   color: #606060;
+  font-family: "Averta-Semibold";
 }
 
 .chat-detail-content .chat-detail-left .chat-merchant-detail p:last-child {
@@ -3421,6 +3445,10 @@ td {
   border-radius: 50%;
   display: grid;
   place-items: center;
+}
+
+.chat-box-head .chat-box-head-left h3 {
+  font-size: 22px;
 }
 
 .chat-box-head .chat-box-head-right .chat-box-search {
