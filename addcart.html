@@ -37,7 +37,7 @@
                 </div>
             </header>
             <div class="product-slider-container">
-                <div id="carouselExampleIndicators" class="carousel slide product-main-slider" data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide product-main-slider">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active slider-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -230,8 +230,7 @@
             <hr class="horizental-line">
             <div class="related-product-section-silder">
                 <h3>Related Product</h3>
-                <div id="carouselExampleIndicators1" class="carousel slide related-product-slider"
-                    data-bs-ride="carousel">
+                <div id="carouselExampleIndicators1" class="carousel slide related-product-slider">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
                             class="active slider-btn" aria-current="true" aria-label="Slide 1"></button>
@@ -365,15 +364,16 @@
         $(document).ready(function () {
             $(".carousel").carousel({
                 touch: true,
-                swipe: true,
-                responsive: [
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            touch: true,
-                        }
-                    },
-                ]
+                swipe: false,
+                // responsive: [
+                //     {
+                //         breakpoint: 600,
+                //         settings: {
+                //             touch: true,
+                //             swipe: false
+                //         }
+                //     },
+                // ]
             })
         });
     </script>
