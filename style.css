@@ -1579,6 +1579,10 @@ td {
   display: flex;
 }
 
+.customer-accont {
+  display: flex;
+}
+
 .customer-review-detail .customer-accont .customer-img img {
   border-radius: 50%;
 }
@@ -3232,6 +3236,7 @@ td {
 
 .comment-head-content .cart-comment-head-left .cart-comment-profile img {
   width: 35px;
+  border-radius: 50%;
 }
 
 .comment-head-content .cart-comment-head-left .cart-comment-name h4 {
@@ -3523,6 +3528,7 @@ td {
 .chat-section .my-chat .my-msg-profile img {
   width: 23px;
   display: flex;
+  border-radius: 50%;
 }
 
 .sm-msg-box {
