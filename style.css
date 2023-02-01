@@ -2235,7 +2235,7 @@ td {
 
 .change-pass-container {
   position: relative;
-  height: 812px;
+  height: 100vh;
 }
 
 .main-heading {
