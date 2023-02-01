@@ -1964,7 +1964,7 @@ td {
 
 .adress-detail-container {
   position: relative;
-  height: 812px;
+  height: 100vh;
 }
 
 .adress-detail-container .address-detail-main-wrapper {
